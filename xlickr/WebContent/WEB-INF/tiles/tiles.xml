@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC   "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	    <definition name="generic.layout" template="/WEB-INF/templates/master.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/templates/header.jsp"/>
+        <put-attribute name="navbar" value="/WEB-INF/templates/nav.jsp"/>
+        <put-attribute name="body"  value=""/>
+        <put-attribute name="footer" value="/WEB-INF/templates/footer.jsp"/>
+        </definition>
+        
+        <definition name="landingPage" extends="generic.layout">
+        <put-attribute name="title" value="Welcome to Xlickr"/>
+        <put-attribute name="header" value="/WEB-INF/templates/header.jsp"/>
+        <put-attribute name="navbar" value="/WEB-INF/templates/nav.jsp"/>
+        <put-attribute name="body"  value="/WEB-INF/pages/landingpage.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/templates/footer.jsp"/>
+        </definition>
+        
+        <definition name="signupPage" extends="generic.layout">
+        <put-attribute name="title" value="Signup"/>
+        <put-attribute name="header" value="/WEB-INF/templates/header.jsp"/>
+        <put-attribute name="navbar" value="/WEB-INF/templates/nav.jsp"/>
+        <put-attribute name="body"  value="/WEB-INF/pages/signupPage.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/templates/footer.jsp"/>
+        </definition>
+        
+        
+        <definition name="signinPage" extends="generic.layout">
+        <put-attribute name="title" value="Signup"/>
+        <put-attribute name="header" value="/WEB-INF/templates/header.jsp"/>
+        <put-attribute name="navbar" value="/WEB-INF/templates/nav.jsp"/>
+        <put-attribute name="body"  value="/WEB-INF/pages/signinPage.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/templates/footer.jsp"/>
+        </definition>
+        
+         <definition name="createPage" extends="generic.layout">
+        <put-attribute name="title" value="Create Album"/>
+        <put-attribute name="header" value="/WEB-INF/templates/header.jsp"/>
+        <put-attribute name="navbar" value="/WEB-INF/templates/nav.jsp"/>
+        <put-attribute name="body"  value="/WEB-INF/pages/createPage.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/templates/footer.jsp"/>
+        </definition>
+        
+        <definition name="albumsPage" extends="generic.layout">
+        <put-attribute name="title" value="My Albums"/>
+        <put-attribute name="header" value="/WEB-INF/templates/header.jsp"/>
+        <put-attribute name="navbar" value="/WEB-INF/templates/nav.jsp"/>
+        <put-attribute name="body"  value="/WEB-INF/pages/albumsPage.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/templates/footer.jsp"/>
+        </definition>
+        
+        <definition name="addImages" extends="generic.layout">
+        <put-attribute name="title" value="Add Images"/>
+        <put-attribute name="header" value="/WEB-INF/templates/header.jsp"/>
+        <put-attribute name="navbar" value="/WEB-INF/templates/nav.jsp"/>
+        <put-attribute name="body"  value="/WEB-INF/pages/addImages.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/templates/footer.jsp"/>
+        </definition>
+        
+         <definition name="albumPage" extends="generic.layout">
+        <put-attribute name="title" value="xlickr Album"/>
+        <put-attribute name="header" value="/WEB-INF/templates/header.jsp"/>
+        <put-attribute name="navbar" value="/WEB-INF/templates/nav.jsp"/>
+        <put-attribute name="body"  value="/WEB-INF/pages/albumPage.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/templates/footer.jsp"/>
+        </definition>
+        
+         <definition name="imagePage" extends="generic.layout">
+        <put-attribute name="title" value="xlickr Image"/>
+        <put-attribute name="header" value="/WEB-INF/templates/header.jsp"/>
+        <put-attribute name="navbar" value="/WEB-INF/templates/nav.jsp"/>
+        <put-attribute name="body"  value="/WEB-INF/pages/imagePage.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/templates/footer.jsp"/>
+        </definition>
+        
+
+</tiles-definitions>
